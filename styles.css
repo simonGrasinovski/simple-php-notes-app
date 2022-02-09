@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+.wrapper {
+    width: 60%;
+    min-width: 450px;
+    margin: 20px auto;
+}
+
+.new-note {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.new-note label {
+    padding-left: 5px;
+}
+
+.new-note input[type="text"], .new-note textarea {
+    width: 100%;
+    display: inline-block;
+    resize: none;
+    margin: 10px 0;
+    padding: 10px;    
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.new-note input[type="submit"] {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #000;
+    color: white;    
+    border: none;
+    border-radius: 4px;
+}
+  
+.new-note input[type="submit"]:hover {
+    opacity: 0.8;
+}
+
+.notes {
+    width: 100%;
+}
+
+.note {
+    width: 100%;
+    min-height: 100px;
+    position: relative;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #dfdfdf;  
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    transition: 0.3s;
+    border-radius: 4px;
+}
+
+.note:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+}
+
+.note .title {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.note .title a {
+    color: black;
+}
+
+.note .delete {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.note small {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: block;
+    margin-top: 10px;
+    text-align: right;
+    font-style: italic;
+}
